@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+	<script src="../js/jquery.rut.chileno.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$('.input_rut').rut();
+		});
+	</script>
+	<style type="text/css">
+		.rut-error{
+			color: #fff;
+			font-weight: bold;
+			background-color: red;
+			padding: 3px 10px;
+			display: inline-block;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		Ingrese su rut:
+		<input type="text" class="input_rut">
+	</form>
+</body>
+</html>
