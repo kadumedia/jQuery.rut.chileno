@@ -31,7 +31,7 @@
 				$t.on(defaults.on, function(){
 					$('.rut-error').remove();
 					if($.rut.validar($t.val()) && $.trim($t.val()) != '')
-						defaults.fn_validado();
+						defaults.fn_validado($t);
 					else
 						defaults.fn_error($t);
 				});
